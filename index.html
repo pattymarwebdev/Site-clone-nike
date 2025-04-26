@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <title>Site Nike</title>
+</head>
+
+<body>
+    <img src="./img/logo.png" class="logo">
+
+    <div class="caixa-principal">
+        <div class="caixa-texto">
+          
+
+            <h1>Nike Air Zoom</h1>
+
+            <p>
+                Uma passada elástica para qualquer corrida, a sensação familiar e perfeita do Peg retorna para ajudá-lo
+                a
+                atingir seus objetivos. 
+            </p>
+
+            <a class="botao-carrinho">
+                Adicionar ao Carrinho
+            </a>
+            <div class="caixa-botoes">
+                <div onclick="mudarVisual('#ccee66', 'img/nike1.png')" class="botoes verde"></div>
+                
+                <div onclick="mudarVisual('#ff9eb5', 'img/nike3.png')" class="botoes rosa"></div>
+                
+                <div onclick="mudarVisual('#58cced', 'img/nike2.png')" class="botoes azul"></div>
+            </div>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./img/nike1.png" class="imagem-tenis">
+        </div>
+    </div>
+<div id="notificacao-carrinho" class="notificacao">
+    <p>Produto adicionado ao carrinho</p>
+    <p id="contador-carrinho-notificacao">Carrinho (0)</p>
+    <button onclick="fecharNotificacao()">Fechar</button>
+</div>
+<script src="scripts.js"></script>
+
+</body>
+
+
+</html>
